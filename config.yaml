@@ -1,0 +1,61 @@
+baseURL: https://eternity.bora.sh # todo: change site url.
+title: The art of Ampoule # todo: change site name.
+defaultContentLanguage: 'en'
+theme: eternity
+googleAnalytics: '' # todo: set your analytics id.
+
+params:
+  image: /images/banner.png
+  logo: logo.png # todo: add your custom logo to static/
+  subtitle: Welcome to my new Web site! Get a look on my work. Hope you enjoying it! # todo: change default subtitle for your website.
+  copyright: All rights reserved. # todo: set your copyright type.
+  author: Lovely Author # todo: set your full name.
+  dontShowSource: false # please, do not do this :)
+  portfolio:
+    columns:
+      desktop:
+        nature: 4
+        archive: 6
+        people: 2
+        default: 3
+      mobile:
+        default: 2
+        archive: 3
+        people: 1
+  socials:
+    # todo: change these links.
+    - icon: 'fab fa-instagram fa-lg'
+      url: 'https://instagram.com/ampoule.art?igshid=MzRlODBiNWFlZA=='
+    - icon: 'fab fa-linkedin-in fa-lg'
+      url: 'https://it.linkedin.com/in/ampoule-art-26079618a'
+  homepage: "work" # homepage link, mostly same with menu.main[0]
+  specialPages:
+    - work
+    - archive
+  bypassWelcomePage: true # redirects "/" to "homepage" when it's true.
+  disableWelcomePageBackground: false # disables the background image on the homepage
+  plausible: '' # todo: set your plausible id.
+  disableRadius: false
+  moveIt: false  # Moves Title and Meta info down, only visible when scroll.
+  disableAlwaysResize: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  work: ":filename/"
+
+menu:
+  main:
+    - name: Portfolio
+      weight: 2
+      url: /work/
+    - name: About
+      url: /about/
+      weight: 5
