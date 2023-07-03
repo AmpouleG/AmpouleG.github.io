@@ -1,8 +1,9 @@
-baseURL: https://eternity.bora.sh # todo: change site url.
+baseURL: https://ampouleg.github.io # todo: change site url.
 title: The art of Ampoule # todo: change site name.
 defaultContentLanguage: 'en'
 theme: eternity
 googleAnalytics: '' # todo: set your analytics id.
+publishDir: "docs"
 
 params:
   image: /images/banner.png
